@@ -283,7 +283,6 @@ function MobileProfile({ profile, isYou, posts, followerCount, followingCount, o
             {statusChip}
             {view.bio && <p className="mt-2.5 max-w-md text-[13px] leading-snug text-ink-foreground/80">{view.bio}</p>}
             {view.location && <p className="mt-1 truncate text-[12px] text-ink-muted">{view.location}</p>}
-            {connectBtns}
             {isYou && (
               <div className="mt-3 flex gap-2">
                 <button onClick={() => setCreate(true)} className="flex h-9 items-center gap-1.5 rounded-lg bg-ink-soft px-5 text-[13px] font-semibold hover:opacity-80"><Plus className="h-4 w-4" /> Create</button>
