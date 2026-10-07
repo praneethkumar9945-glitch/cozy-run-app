@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the community and event experience organized as separate TanStack route files with shared site and explore UI under `src/components`, so pages remain directly addressable and reusable.
