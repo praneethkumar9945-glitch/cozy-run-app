@@ -257,18 +257,6 @@ function MobileProfile({ profile, isYou, posts, followerCount, followingCount, o
     <span className="mt-1 inline-block rounded bg-ink-soft px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.1em] text-primary">{blocked ? "Blocked" : "Restricted"}</span>
   ) : null;
 
-  // Instagram-style action row: Connection (who connected with you) · Connect (the action / find people) · Connected (who you connected with).
-  const connectBtns = (
-    <div className={cn("grid grid-cols-3 gap-2", desktop ? "mt-3 max-w-[420px]" : "mx-auto mt-4 w-full max-w-[320px]")}>
-      <button onClick={() => onList("followers")} className="h-10 rounded-md bg-ink-soft text-[12px] font-bold hover:opacity-80">Connection</button>
-      {isYou ? (
-        <Link to="/explore" className="grid h-10 place-items-center rounded-md bg-ink-soft text-[12px] font-bold hover:opacity-80">Connect</Link>
-      ) : (
-        <button onClick={() => void toggleFollow(profile.id)} aria-pressed={on} className={cn("h-10 rounded-md text-[12px] font-bold hover:opacity-90", on ? "bg-ink-soft" : "bg-primary text-primary-foreground")}>Connect</button>
-      )}
-      <button onClick={() => onList("following")} className="h-10 rounded-md bg-ink-soft text-[12px] font-bold hover:opacity-80">Connected</button>
-    </div>
-  );
 
   return (
     <div className={desktop ? "mx-auto hidden max-w-[935px] px-6 sm:block lg:px-8" : "sm:hidden"}>
