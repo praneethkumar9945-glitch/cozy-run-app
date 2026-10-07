@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin } from "lucide-react";
 import { BadgesFor } from "@/components/explore/CategoryBadges";
 import { Avatar } from "@/components/explore/shared";
-import { YOU, exploreCatalog, exploreStories, findProfile, type ExploreProfile } from "@/lib/explore-data";
+import { YOU, avatarFor, exploreCatalog, exploreStories, findProfile, type ExploreProfile } from "@/lib/explore-data";
 import { isFollowing, toggleFollow, useExploreState } from "@/lib/explore-service";
 import { events } from "@/lib/data";
 import { cn } from "@/lib/utils";

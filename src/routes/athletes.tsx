@@ -2,7 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Search, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { exploreCatalog, exploreProfiles, exploreStories, type ExploreProfile } from "@/lib/explore-data";
+import { avatarFor, exploreCatalog, exploreProfiles, exploreStories, type ExploreProfile } from "@/lib/explore-data";
 import { BadgesFor } from "@/components/explore/CategoryBadges";
 
 type CommunitySearch = { q?: string | undefined; who?: string | undefined; domain?: string | undefined };
